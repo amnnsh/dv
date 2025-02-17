@@ -1,0 +1,28 @@
+def add(a,b):
+ return a+b
+def btr(a,b):
+ return a-b
+def mul(a,b):
+ return a*b
+def div(a,b):
+ return a/b
+
+def calculator():
+ a=int(input("Please enter the first number: "))
+ b=int(input("Please enter the second number: "))
+ choice=input("Please enter the function you want to perform: ")
+ 
+ if choice in ['+','-','*','/']:
+  if choice =='+':
+   print(f"{a}+{b}={add(a,b)}")
+  elif choice =='-':
+   print(f"{a}-{b}={btr(a,b)}")
+  elif choice =='*':
+   print(f"{a}-{b}={mul(a,b)}")
+  elif choice =='/':
+   print(f"{a}-{b}={div(a,b)}")  
+ else:
+  print("Invalid operation choice")
+
+calculator()
+
